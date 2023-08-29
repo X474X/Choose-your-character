@@ -28,12 +28,11 @@ const noseImages = [
   "Images/Nose/Nas 3.png",
 ];
 
-const mouthRight = document.querySelector("mouth-arrow-right");
-const motuhLeft = document.querySelector(".mouth-arrow-left");
+const mouthRight = document.querySelector(".mouth-arrow-right");
+const mouthLeft = document.querySelector(".mouth-arrow-left");
 const mouth = document.querySelector(".mouth");
 const mouthImages = [
   "Images/Mouth/SMILE.png",
-  "Images/Mouth/Gura 1.png",
   "Images/Mouth/Gura 2.png",
   "Images/Mouth/Gura 3.png",
 ];
@@ -82,7 +81,7 @@ noseLeft.addEventListener("click", () => {
 });
 
 mouthRight.addEventListener("click", () => {
-  if (mouthIndex <= 3) {
+  if (mouthIndex <= 1) {
     mouthIndex++;
     mouth.src = mouthImages[mouthIndex];
   }
